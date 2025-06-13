@@ -21,7 +21,7 @@ const dummy_array = [
 
 const SidebarList = () => {
   return (
-    <div className="h-[30rem] overflow-y-scroll" style={{
+    <div className="h-[30.2rem] overflow-y-scroll" style={{
       scrollbarWidth: "none", // Firefox
       msOverflowStyle: "none", // IE 10+
       }}>

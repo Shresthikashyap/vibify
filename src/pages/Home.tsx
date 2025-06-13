@@ -6,10 +6,10 @@ import Footer from "../components/Footer/Footer";
 const Home = () => {
   return (
     <div>
-<div className=" min-h-screen ">
+<div className="min-h-screen ">
   <Navbar />
 
-  <div className="border">
+  <div className="">
     <div className="grid min-h-auto grid-cols-6 ">
       <div className="col-span-1 grid ">
             <Sidebar />   
