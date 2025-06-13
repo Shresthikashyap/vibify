@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../components/HomeContent/SongCarousel/carousel";
+// jkjkhjh;
 
 export default function CarouselSpacing() {
   return (
@@ -23,9 +24,9 @@ export default function CarouselSpacing() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="flex aspect-square items-center justify-center p-6">
-                      <img 
-                      src="https://st3.depositphotos.com/14847044/19141/i/450/depositphotos_191413466-stock-photo-sunset.jpg"
-                      className=""
+                      <img
+                        src="https://st3.depositphotos.com/14847044/19141/i/450/depositphotos_191413466-stock-photo-sunset.jpg"
+                        className=""
                       />
                     </CardContent>
                   </Card>
