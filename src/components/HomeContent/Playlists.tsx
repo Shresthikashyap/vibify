@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "./SongCarousel/carousel";
 
+//playlist...
 const playlists = [
   {
     id: 1,
