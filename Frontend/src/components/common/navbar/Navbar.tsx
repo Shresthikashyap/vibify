@@ -10,8 +10,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="bg-black h-[4rem] flex  items-center gap-110 ">
-      {/* <div className="flex items-center gap-5"> */}
+    <div className="bg-black h-[4rem] flex  items-center gap-110 fixed">
       <div>
         <img src="./spotify-icon.png" alt="Logo" className="h-8 pl-5 my-4 " />
       </div>
