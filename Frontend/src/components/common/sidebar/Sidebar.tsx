@@ -5,7 +5,7 @@ import SidebarList from "./SidebarList";
 const Sidebar = () => {
   return (
     <>
-      <div className="flex flex-col  bg-black text-white ">
+      <div className="flex flex-col  bg-black text-white fixed">
         <div className="">
           <div className="flex gap-15 px-3.5 ">
             <h3 className="font-bold text-[1rem]">Your Library</h3>
