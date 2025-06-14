@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "./SongCarousel/carousel";
 
+//playlist...
 const playlists = [
   {
     id: 1,
@@ -60,7 +61,10 @@ const recentlyPlayed = [
 
 const Playlists = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-y-scroll" style={{
+      scrollbarWidth: "none", // Firefox
+      msOverflowStyle: "none", // IE 10+
+      }} >
       <div className="ml-4 mt-2 mr-1.5">
         <div className="flex justify-start items-start gap-2 text-white text-center ">
           <p className="bg-gray-800 px-3.5 text-[0.9rem] py-2 rounded-full">
@@ -85,6 +89,36 @@ const Playlists = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-4">
+          <h2 className="font-semibold text-2xl mb-2">Made For you</h2>
+          <Carousel className="w-full">
+            <CarouselContent className="-ml-4">
+              {playlists.map((playlist) => (
+                <CarouselItem
+                  key={playlist.id}
+                  className="pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
+                >
+                  <Card className="aspect-square hover:bg-gray-200 transition-colors border border-red-600">
+                   <CardContent className="p-4">
+                      
+                       <div className="p-12 rounded-lg flex items-center justify-center relative overflow-hidden">
+                        <div className="absolute inset-0 bg-black/20"></div>
+                        <div className="text-center z-10 p-4">
+                          <div className="text-2xl mb-2">♪</div>
+                          <div className="text-xs font-medium opacity-90">
+                            {playlist.title}
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent> 
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="bg-zinc-800 border-zinc-700 text-white hover:bg-zinc-700 -left-4" />
+            <CarouselNext className="bg-zinc-800 border-zinc-700 text-white hover:bg-zinc-700 -right-4" />
+          </Carousel>
         </div>
         <div className="mt-4">
           <h2 className="font-semibold text-2xl mb-2">Made For you</h2>
