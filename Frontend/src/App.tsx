@@ -5,12 +5,10 @@ import Carousel from "./pages/Carousel";
 function App() {
   return (
     <Router>
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/carousel" element={<Carousel />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/carousel" element={<Carousel />} />
+      </Routes>
     </Router>
   );
 }
