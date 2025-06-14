@@ -1,4 +1,3 @@
-import React from "react";
 import { Plus, Maximize2 } from "lucide-react";
 import SidebarList from "./SidebarList";
 
@@ -6,7 +5,7 @@ const Sidebar = () => {
   return (
     <>
       <div className="flex flex-col  bg-black text-white fixed">
-        <div className="">
+        <div className="mt-4">
           <div className="flex gap-15 px-3.5 ">
             <h3 className="font-bold text-[1rem]">Your Library</h3>
             <div className="flex gap-2">
