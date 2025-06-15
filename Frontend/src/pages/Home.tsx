@@ -1,6 +1,6 @@
 import Navbar from "../components/common/navbar/Navbar";
 import Sidebar from "../components/common/sidebar/Sidebar";
-import MainContent from "../components/HomeContent/Playlists"; // Your new main content
+import MainContent from "../components/HomeContent/Playlists";
 import Footer from "../components/common/footer/Footer";
 
 const Home = () => {
