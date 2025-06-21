@@ -1,11 +1,9 @@
 import { Router } from "express";
+import { protectRoute, requireAdmin } from "../middleware/auth.middleware.js";
+import { getStats } from "../controller/stat.controller.js";
 
 const router = Router();
 
-router.get("/", (req, res) => {
-  res.status(200).json({
-    message: "Welcome to the admin route",
-  });
-});
+router.get("/", protectRoute, requireAdmin, getStats);
 
 export default router;
