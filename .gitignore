@@ -1,7 +1,16 @@
-/backend/node_modules
-/backend/.env
+# Backend
+/Backend/node_modules
+/Backend/.env
 
-/frontend/node_modules
-/frontend/.env.local
+# Frontend
+/Frontend/node_modules
+/Frontend/.env.local
 
+# Root-level node_modules
+/node_modules
+
+# Other env files
 /env
+
+# VS Code
+.vscode/
