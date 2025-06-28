@@ -1,4 +1,4 @@
-import Registration from "../registration/Registration.jsx"
+import Registration from "../registration/Registration.tsx"
 
 const HomePage = () => {
   return (
