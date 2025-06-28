@@ -4,7 +4,7 @@
 
 # Frontend
 /Frontend/node_modules
-/Frontend/.env.local
+/Frontend/.env
 
 # Root-level node_modules
 /node_modules
