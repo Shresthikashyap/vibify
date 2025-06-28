@@ -1,0 +1,29 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Debug Fullstack (Frontend + Backend)",
+      "configurations": ["Frontend: React", "Backend: Express"]
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Frontend: React",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/Frontend",
+      "preLaunchTask": "npm: start (frontend)"
+    },
+    {
+      "name": "Backend: Express",
+      "type": "pwa-node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/Backend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ]
+}
