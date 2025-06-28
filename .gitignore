@@ -1,24 +1,7 @@
-# Ignore node_modules in both frontend and backend
-Frontend/node_modules/
-Backend/node_modules/
+/backend/node_modules
+/backend/.env
 
-# Ignore environment files
-Frontend/.env
-Backend/.env
+/frontend/node_modules
+/frontend/.env.local
 
-# Ignore build files
-Frontend/build/
-Backend/dist/
-
-# Logs
-Frontend/npm-debug.log*
-Backend/npm-debug.log*
-*.log
-
-# IDE/editor files
-.vscode/
-.idea/
-
-# OS metadata
-.DS_Store
-Thumbs.db
+/env

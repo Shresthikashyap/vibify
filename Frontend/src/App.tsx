@@ -1,14 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/home/HomePage';
+import AuthCallbackPage from './pages/auth-callback/AuthCallbackPage';
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <>
+    <Routes>
+      <Route path="/" element={<HomePage />}/>
+      <Route path='/auth-callback' element={<AuthCallbackPage/>}/>
+    </Routes>
+    </>
   );
 }
-
-export default App;
