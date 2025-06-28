@@ -1,8 +1,10 @@
-import React from 'react'
+import Registration from "../registration/Registration.jsx"
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+  <>
+  <Registration/>
+  </>
   )
 }
 
